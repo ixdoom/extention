@@ -1,0 +1,70 @@
+{
+    "manifest_version": 2,
+ 
+    "name": "Extention",
+    "description": "Extention for MTUCI",
+    "version": "2.0",
+ 
+	"web_accessible_resources": [
+        "icons/key.png",
+        "icons/lock.png",
+        "icons/unlock.png"
+    ],
+ 	"default_locale": "en",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+	"background": {
+        "scripts": [
+            "bootstrap.js",
+            "util.js",
+            "rules.js",
+            "store.js",
+            "incognito.js",
+            "background.js"
+        ]
+    },
+	"content_scripts": [
+        {
+            "matches": [
+                "*://*.vk.com/*"
+            ],
+            "js": [
+                "jquery-3.1.1.slim.min.js",
+                "sha/sha256.js",
+                "aes-js/index.js",
+                "base64/base64js.min.js",
+                "encoding/encoding.js",
+                "scrypt/scrypt.js",
+                "scrypt/thirdparty/unorm.js",
+                "scrypt/thirdparty/buffer.js",
+                "scrypt/thirdparty/setImmediate.js",
+                "configuration.js",
+                "vkencrypt.js",
+                "header-module.js",
+                "pre-module.js",
+                "presend-module.js",
+                "storage.js",
+                "encrypt-module.js",
+                "time-module.js",
+                "navigation-module.js",
+                "error-module.js"
+            ]
+        }
+    ],
+	
+    "permissions": [
+        "activeTab",
+		"tabs",
+		"http://mtucidiplom.16mb.com/*",
+		"*://*.vk.com/*",
+		"webNavigation",
+        "webRequest",
+        "webRequestBlocking",
+        "tabs",
+        "cookies",
+        "storage",
+        "*://*/*"
+    ]
+}
