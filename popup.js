@@ -53,7 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
 					{
 						var request2 = makeHttpObject();
 						var str3 = "http://mtucidiplom.16mb.com/check2.php?url=";
-						var str4 = str3.concat(i1.value);
+						var tempstr = i1.value;
+						var str4 = str3.concat(tempstr.split('/')[0]);
 						i.value = str4;
 						request2.open("GET", str4, true);
 						request2.send(null);
