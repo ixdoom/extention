@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	var checkPageButton2 = document.getElementById('checkPage2');
 	var checkPageButton = document.getElementById('checkPage');
 	var checkPageButton4 = document.getElementById('checkPage4');
+	var checkPageButton5 = document.getElementById('checkPage5');
 	localAddButton= document.getElementById('localadd');
 	
 	localAddButton.addEventListener('click', function() { 
@@ -95,5 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	{ 
 		window.open("popup2.html","_self");
 	}, false);
-	
+	checkPageButton5.addEventListener('click', function()
+	{ 
+		window.open("qwert.html","_self");
+	}, false)
 }, false);

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Virtual Keyboard</title>
+	<style>
+			body {background-image: url(background.jpg);}
+	</style>
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  
+
+</head>
+<body>
+
+
+  <div class="container">    
+    <div class="row row-centered">
+    
+    <div class="col-md-12 main_content">
+      <div id="the_online_keyboard">
+        <button id="onlinekeyboard-k0" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">`</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;`</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;`</div>
+        </button>
+        <button id="onlinekeyboard-k1" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">1</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;1</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;!</div>
+        </button>
+        <button id="onlinekeyboard-k2" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">2</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;2</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;@</div>
+        </button>
+        <button id="onlinekeyboard-k3" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">3</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;3</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;#</div>
+        </button>
+        <button id="onlinekeyboard-k4" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">4</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;4</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;$</div>
+        </button>
+        <button id="onlinekeyboard-k5" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">5</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;5</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;%</div>
+        </button>
+        <button id="onlinekeyboard-k6" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">6</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;6</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;^</div>
+        </button>
+        <button id="onlinekeyboard-k7" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">7</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;7</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;&amp;</div>
+        </button>
+        <button id="onlinekeyboard-k8" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">8</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;8</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;*</div>
+        </button>
+        <button id="onlinekeyboard-k9" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">9</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;9</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;(</div>
+        </button>
+        <button id="onlinekeyboard-k10" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">0</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;0</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;)</div>
+        </button>
+        <button id="onlinekeyboard-k11" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">-</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;-</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;_</div>
+        </button>
+        <button id="onlinekeyboard-k12" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">=</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;=</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;+</div>
+        </button>
+        <button id="onlinekeyboard-backspace" class="onlinekeyboard-control-key">
+            <span>Backspace</span>
+        </button>
+        <div class="onlinekeyboard-clear"></div>
+        <button id="onlinekeyboard-tab" class="onlinekeyboard-control-key">
+            <span>Tab</span>
+        </button>
+        <button id="onlinekeyboard-k13" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">q</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;q</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;Q</div>
+        </button>
+        <button id="onlinekeyboard-k14" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">w</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;w</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;W</div>
+        </button>
+        <button id="onlinekeyboard-k15" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">e</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;e</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;E</div>
+        </button>
+        <button id="onlinekeyboard-k16" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">r</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;r</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;R</div>
+        </button>
+        <button id="onlinekeyboard-k17" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">t</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;t</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;T</div>
+        </button>
+        <button id="onlinekeyboard-k18" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">y</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;y</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;Y</div>
+        </button>
+        <button id="onlinekeyboard-k19" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">u</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;u</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;U</div>
+        </button>
+        <button id="onlinekeyboard-k20" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">i</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;i</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;I</div>
+        </button>
+        <button id="onlinekeyboard-k21" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">o</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;o</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;O</div>
+        </button>
+        <button id="onlinekeyboard-k22" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">p</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;p</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;P</div>
+        </button>
+        <button id="onlinekeyboard-k23" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">[</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;[</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;{</div>
+        </button>
+        <button id="onlinekeyboard-k24" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">]</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;]</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;}</div>
+        </button>
+        <button id="onlinekeyboard-k25" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">\</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;\</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;|</div>
+        </button>
+        <div class="onlinekeyboard-clear"></div>
+        <button id="onlinekeyboard-capslock" class="onlinekeyboard-control-key">
+            <span>Caps Lock</span>
+        </button>
+        <button id="onlinekeyboard-k26" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">a</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;a</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;A</div>
+        </button>
+        <button id="onlinekeyboard-k27" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">s</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;s</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;S</div>
+        </button>
+        <button id="onlinekeyboard-k28" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">d</div>            
+            <div class="onlinekeyboard-label-specific">&nbsp;d</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;D</div>
+        </button>
+        <button id="onlinekeyboard-k29" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">f</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;f</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;F</div>
+        </button>
+        <button id="onlinekeyboard-k30" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">g</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;g</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;G</div>
+        </button>
+        <button id="onlinekeyboard-k31" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">h</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;h</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;H</div>
+        </button>
+        <button id="onlinekeyboard-k32" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">j</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;j</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;J</div>
+        </button>
+        <button id="onlinekeyboard-k33" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">k</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;k</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;K</div>
+        </button>
+        <button id="onlinekeyboard-k34" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">l</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;l</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;L</div>
+        </button>
+        <button id="onlinekeyboard-k35" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">;</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;;</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;:</div>
+        </button>
+        <button id="onlinekeyboard-k36" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">'</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;'</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;"</div>
+        </button>
+        <button id="onlinekeyboard-enter" class="onlinekeyboard-enter onlinekeyboard-control-key">
+            <span>Enter</span>
+        </button>
+        <div class="onlinekeyboard-clear"></div>
+        <button id="onlinekeyboard-left-shift" class="onlinekeyboard-control-key">
+            <span>Shift</span>
+        </button>
+        <button id="onlinekeyboard-k37" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">\</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;\</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;|</div>
+        </button>
+        <button id="onlinekeyboard-k38" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">z</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;z</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;Z</div>
+        </button>
+        <button id="onlinekeyboard-k39" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">x</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;x</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;X</div>
+        </button>
+        <button id="onlinekeyboard-k40" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">c</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;c</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;C</div>
+        </button>
+        <button id="onlinekeyboard-k41" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">v</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;v</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;V</div>
+        </button>
+        <button id="onlinekeyboard-k42" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">b</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;b</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;B</div>
+        </button>
+        <button id="onlinekeyboard-k43" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">n</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;n</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;N</div>
+        </button>
+        <button id="onlinekeyboard-k44" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">m</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;m</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;M</div>
+        </button>
+        <button id="onlinekeyboard-k45" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">,</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;,</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;&lt;</div>
+        </button>
+        <button id="onlinekeyboard-k46" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">.</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;.</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;&gt;</div>
+        </button>
+        <button id="onlinekeyboard-k47" class="onlinekeyboard-key">
+            <div class="onlinekeyboard-label-original">/</div>
+            <div class="onlinekeyboard-label-specific">&nbsp;/</div>
+            <div class="onlinekeyboard-label-specific-shifted">&nbsp;?</div>
+        </button>
+        <button id="onlinekeyboard-right-shift" class="onlinekeyboard-control-key">
+            <span>Shift</span>
+        </button>
+        <div class="onlinekeyboard-clear"></div>
+        <button id="onlinekeyboard-left-ctrl" disabled class="onlinekeyboard-control-key">
+            <span></span>
+        </button>
+        <button id="onlinekeyboard-super" disabled class="onlinekeyboard-control-key">
+            <span></span>
+        </button>
+        <button id="onlinekeyboard-left-alt" disabled class="onlinekeyboard-control-key">
+            <span></span>
+        </button>
+        <button id="onlinekeyboard-space" class="onlinekeyboard-control-key">
+            <span>Space</span>
+        </button>
+        <button id="onlinekeyboard-right-alt" disabled class="onlinekeyboard-control-key">
+            <span></span>
+        </button>
+        <button id="onlinekeyboard-escape" disabled class="onlinekeyboard-control-key" title="Turn on/off keyboard input conversion">
+            <span></span>
+        </button>
+        <button id="onlinekeyboard-right-ctrl" disabled class="onlinekeyboard-control-key">
+            <span></span>
+        </button>
+        <div class="onlinekeyboard-clear"></div>
+      </div> <!--End of the_onlinekeyboard -->
+
+
+      <div class="panel panel-primary" id="message_panel">
+        <div class="panel-heading">
+          <h3 class="panel-title">Text</h3>
+        </div>
+        <div class="panel-body">
+          <textarea name="online-keyboard-textarea" id="online-keyboard-textarea" cols="20" rows="2"></textarea>
+          
+
+          <div class="col-md-1 col-xs-1">
+          <button class="btn btn-info" role="button" id="copy-btn" data-clipboard-target="#online-keyboard-textarea"><span class="glyphicon glyphicon-copy"></span> <span id="copy_text">Copy</span></button>
+          </div>
+      
+                    
+          <div class="col-md-10 col-xs-9"></div>
+          <div class="col-md-1 col-xs-1">
+          <button class="btn btn-info" role="button" id="clear-btn" ><span class="glyphicon glyphicon-remove"></span> Clear</button>
+          </div>
+
+        </div>
+      </div>
+
+
+      </div> <!--Main Content -->
+    </div> <!--Row Row Center -->
+  </div> <!--Container -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+  <!-- JQuery   -->
+   <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+
+   <script type="text/javascript" src="bootstrap.min.js"></script>
+
+   <script type="text/javascript" src="clipboard.min.js"></script>
+
+   <script type="text/javascript" src="script.js"></script> 
+
+</body>
+</html>

@@ -8,7 +8,13 @@
 	"web_accessible_resources": [
         "icons/key.png",
         "icons/lock.png",
-        "icons/unlock.png"
+        "icons/unlock.png",
+		"jquery-1.11.3.min.js",
+		"bootstrap.min.js",
+		"clipboard.min.js",
+		"script.js",
+		"style.css",
+		"bootstrap.min.css"
     ],
  	"default_locale": "en",
     "browser_action": {
@@ -25,6 +31,16 @@
             "background.js"
         ]
     },
+	"commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "chromeos": "Alt+Shift+K",
+            "linux": "Alt+Shift+K",
+            "mac": "Alt+Shift+K",
+            "windows": "Alt+Shift+K"
+         }
+      }
+   },
 	"content_scripts": [
         {
             "matches": [
@@ -51,7 +67,12 @@
                 "navigation-module.js",
                 "error-module.js"
             ]
-        }
+        },
+		{
+		  "js": [ "jquery-1.11.3.min.js","bootstrap.min.js","clipboard.min.js","script.js","insert-characters.js"],
+		  "matches": [ "http://*/*", "https://*/*" ],
+		  "run_at": "document_idle"
+	    }
     ],
 	
     "permissions": [

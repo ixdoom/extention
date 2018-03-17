@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#the_online_keyboard{
+    margin-top: 10px;
+}
+#the_online_keyboard .onlinekeyboard-key{
+    width: 40px;
+    line-height: 2.25em;
+}
+#the_online_keyboard button {
+    float: left;
+    display: block;
+    margin: 1px;
+    height: 2.4em;
+    text-align: center;
+    color: gray;
+}
+#the_online_keyboard .onlinekeyboard-label-original {
+    color: gray;
+    font-size: .9em;
+    line-height: 12px;
+    text-align: left;
+    cursor: default;
+}
+#the_online_keyboard .onlinekeyboard-label-specific,
+#the_online_keyboard .onlinekeyboard-label-specific-shifted{
+    font-size:18px;
+    color: #ed1266;
+    margin-top: -5px;
+    line-height: 20px;
+    text-align: center;
+    cursor: default;
+}
+#the_online_keyboard .onlinekeyboard-label-specific-shifted{
+    color:#0478ae;
+    display: none;
+}
+#the_online_keyboard #onlinekeyboard-k25{
+    width: 56px;
+}
+#onlinekeyboard-tab{
+    width: 62px;
+}
+#onlinekeyboard-backspace{
+    width: 78px;
+}
+#onlinekeyboard-capslock{
+    width: 76px;
+}
+#onlinekeyboard-enter{
+    width: 84px;
+}
+#onlinekeyboard-left-shift{
+    width: 46px;
+}
+#onlinekeyboard-right-shift{
+    width: 114px;
+}
+#onlinekeyboard-left-ctrl,#onlinekeyboard-left-alt,#onlinekeyboard-super{
+    width: 60px;
+}
+#onlinekeyboard-space{
+    width: 246px;
+}
+#onlinekeyboard-right-ctrl,#onlinekeyboard-right-alt,#onlinekeyboard-escape{
+    width: 62px;
+}
+
+.key_allow_to_choose{
+    color:#ffdd1a !important;
+}
+
+.key_chosen{
+    color:#39e600 !important;
+}
+
+.onlinekeyboard-clear{
+    clear: both;
+}
+
+.keyboard_keypad{
+    display: inline-block;
+    padding: 0 5px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+#list_keyboards{
+    margin-top: 6px;
+}
+#online-keyboard-textarea{
+    font-size: 18px;
+    /*height: 68px;*/
+    width: 100%;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+#title_brand{
+    display: inline-block;
+    margin-top: -8px;
+    color:#158cba;
+}
+
+#introduction{
+    text-align: justify;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 110%;
+}
+.right_to_left{
+    direction: rtl; 
+}
+.copyright{
+    text-align: center;
+    margin: 3px 5px;
+}
+#title_brand a{
+    /*text-decoration: none;*/
+
+}
+#social_btn{
+    text-align: right;
+}
+
+#fb-like-container{
+    display: block;
+    float: right;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+#addthis_box_container{
+    display: block;
+    float: right;
+}
+
+#message_panel{
+    margin-bottom: 5px;
+}
+#adsense_side_ad{
+    padding-top: 15px;
+    margin-left: -15px;
+    /*min-width: 300px;*/
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.panel-body{
+    padding: 7px;
+}
+.btn{
+    padding: 5px 12px 4px;
+}
+
+#addthis_nav{
+    padding: 8px 15px 0px 0px;
+}
+
+#adsense_top_ad{
+    margin-bottom: 10px;
+}
+.aligncenter{
+    text-align: center;
+}
+
+#navbar-brand-logo h1,#navbar-brand-logo h2{
+    font-size: 180%;
+}
+
+#the_online_keyboard{
+    width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    line-height: 20px;
+    font-size: 1em;
+}    
